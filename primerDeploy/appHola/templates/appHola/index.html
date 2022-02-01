@@ -1,0 +1,11 @@
+{% extends 'appHola/base.html' %}
+{% load static %}
+
+{% block body %}
+
+  <div class="content">
+    <img src="{% static 'appHola/hello.svg' %}" alt="">
+    <p>Desplegado desde Heroku</p>
+  </div>
+
+{% endblock %}
