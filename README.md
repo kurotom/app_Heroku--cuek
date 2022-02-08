@@ -35,7 +35,7 @@ Recordar poner "gunicorn" dentro del fichero "requirements.txt".
 En el fichero `settings.py` del proyecto, importar y configurar.
 
 ```
-  import django-heroku
+  import django_heroku
 
   [...]
 
