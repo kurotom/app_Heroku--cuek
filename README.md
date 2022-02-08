@@ -9,6 +9,15 @@ Heroku requiere de un fichero `Procfile`, este fichero declara explícitamente t
 
 Procfile requiere Gunicorn, el servidor web de producción que se recomienda para aplicaciones Django.
 
+## runtime.txt
+
+Se puede definir que versión de Python se ejecuta en la aplicación, se necesita el fichero `runtime.txt`.
+
+```
+  #  cat runtime.txt
+  python-3.9
+```
+
 
 ### Instalar gunicorn
 
