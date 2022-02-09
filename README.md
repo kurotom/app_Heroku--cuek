@@ -1,6 +1,16 @@
 # Configurar Django App para Heroku
 
-Heroku requiere de un fichero `Procfile`, este fichero declara explícitamente tipo de procesos de la aplicación será usado y los puntos de entrada, está ubicado en al carpeta raíz del proyecto.
+Heroku requiere de ficheros `Procfile`, `runtime.txt`, `requirements.txt`, este fichero declara explícitamente tipo de procesos de la aplicación será usado y los puntos de entrada, está ubicado en al carpeta raíz del proyecto.
+
+Se debe tener en cuenta que Heroku opera con `stacks` de software, es decir, la version del lenguaje a usar, a continuación dejo enlaces con la información:
+
+- [stack-support-details](https://devcenter.heroku.com/articles/stack#stack-support-details)
+
+- [supported-runtimes](https://devcenter.heroku.com/articles/python-support#supported-runtimes)
+
+
+Por ejemplo, si la aplicación usa Python 3.9.9, el fichero runtime debe contener `python-3.9.9`, de lo contrario, se pueden generar errores de compatibilidad.
+
 
 ## Procfile
 
@@ -15,7 +25,7 @@ Se puede definir que versión de Python se ejecuta en la aplicación, se necesit
 
 ```
   #  cat runtime.txt
-  python-3.9
+  python-3.9.9
 ```
 
 
@@ -112,6 +122,13 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 ```
 
 Ahora tu aplicación sirve elementos estáticos directamente desde Gunicorn en producción. Esto es perfectamente adecuado para muchas aplicaciones, pero aplicaciones mucho más complejas pueden requerir usar CDN con [Django-Storages](http://django-storages.readthedocs.org/en/latest/).
+
+
+## Generando requirements.txt
+
+  ` # pip freeze > requirements. txt`
+  
+Con ello generamos el archivo con los modulos necesarios para la aplicación y Heroku.
 
 
 
