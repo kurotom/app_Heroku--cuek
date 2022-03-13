@@ -1,2 +1,2 @@
 gunicorn
-django-heroku
+django-on-heroku
