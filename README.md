@@ -46,7 +46,7 @@ Permitiendo leer `DATABASE_URL`, configuracion de registro, un [Heroku CI](https
 
 ### Instalar django-heroku
 
-  `pip install django-heroku`
+  `pip install django-on-heroku`
 
 Recordar poner "gunicorn" dentro del fichero "requirements.txt".
 
