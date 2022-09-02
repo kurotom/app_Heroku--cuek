@@ -1,3 +1,16 @@
+---
+
+# :feelsgood: Información importante :feelsgood:
+
+**Focus on what's mission-critical:** Removal of free dynos, hobby-dev Heroku Postgres and hobby-dev Heroku Data for Redis plans starting November 28, 2022 and inactive account deletion starting October 26, 2022.
+
+
+[Fuente](https://blog.heroku.com/next-chapter)
+
+
+---
+
+
 # Configurar Django App para Heroku
 
 Heroku requiere de ficheros `Procfile`, `runtime.txt`, `requirements.txt`, este fichero declara explícitamente tipo de procesos de la aplicación será usado y los puntos de entrada, está ubicado en al carpeta raíz del proyecto.
