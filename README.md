@@ -1,12 +1,19 @@
----
 
-# :feelsgood: Información importante :feelsgood:
+<p align="center">
+  <h1 align="center">:feelsgood: Informacion importante :feelsgood:</h1>
+</p>
+
+
 
 **Focus on what's mission-critical:** Removal of free dynos, hobby-dev Heroku Postgres and hobby-dev Heroku Data for Redis plans starting November 28, 2022 and inactive account deletion starting October 26, 2022.
 
 
-[Fuente](https://blog.heroku.com/next-chapter)
+[Fuente - Heroku Blog](https://blog.heroku.com/next-chapter)
 
+
+<p align="center">
+  <img src="https://media.giphy.com/media/JRfeW57aMDwA/giphy.gif" alt="run" />
+</p>
 
 ---
 
